@@ -136,8 +136,9 @@
 	alias py='python3'
 	alias python='python3'
 	alias pip='pip3'
-	alias venv='py -m venv venv'
-
+	alias venv='py -m venv venv --upgrade-deps'
+	alias activate='source venv/bin/activate'
+	
 	# esp-idf
 	# -------
 	# Espressif IDF
