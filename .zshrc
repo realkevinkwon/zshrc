@@ -73,19 +73,22 @@
 
 	# rm
 	# --
-	#	Prompt before deleting files.
+	# Delete files.
+	#	-i	Prompt before deleting files.
 	#
 	alias rm='rm -i'
 
 	# clear
 	# -----
-	# 	Clear the terminal more quickly.
+	# Clear the terminal more quickly.
 	#
 	alias c='clear'
 
 	# valgrind
 	# --------
-	#	Always show each individual leak in detail.
+	# Check for memory issues.
+	#
+	#	--leak-check=full	Always show each individual leak in detail.
 	#
 	alias valgrind='valgrind --leak-check=full'
 
@@ -103,7 +106,8 @@
 	#			('%')	whiteout
 	#			('|')	FIFO
 	#
-	#	-G		Enable colorized output.
+	#	--color=always
+	#			Colorize the output.
 	#
 	#	-T		When printing in the long format, display complete
 	#			time information for the file, including month, day, hour,
@@ -114,11 +118,14 @@
 	#			petabyte (P) to reduce number of digits to four or fewer
 	#			using base 2 for sizes.
 	#
+	#	-d		List only directories.
+	#
 	#	-o		List in long format, but omit the group id.
 	#
-	alias ls='ls -A -F -G -T -h'
+	alias ls='ls -A -F -T -h --color=always'
 	alias ll='ls -o'
-	
+	alias ld="ll | grep '^d'"
+
 	# python
 	# ------
 	# Aliases for python3 and pip3.
@@ -126,6 +133,12 @@
 	alias py='python3'
 	alias python='python3'
 	alias pip='pip3'
+
+	# esp-idf
+	# -------
+	# Espressif IDF
+	#
+	alias get-idf='. $HOME/esp/esp-idf/export.sh'
 
 #	====
 #	PATH
