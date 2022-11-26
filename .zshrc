@@ -129,10 +129,14 @@
 	# python
 	# ------
 	# Aliases for python3 and pip3.
+	#	-m venv
+	#			Creates a virtual environment 'venv' in
+	#			the current directory.
 	#
 	alias py='python3'
 	alias python='python3'
 	alias pip='pip3'
+	alias venv='py -m venv venv'
 
 	# esp-idf
 	# -------
