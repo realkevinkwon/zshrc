@@ -114,6 +114,14 @@
 	#
 	alias ls='ls -A -F -G -T -h'
 	alias ll='ls -o'
+	
+	# python
+	# ------
+	# Aliases for python3 and pip3.
+	#
+	alias py='python3'
+	alias python='python3'
+	alias pip='pip3'
 
 #	====
 #	PATH
