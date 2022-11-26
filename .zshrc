@@ -67,6 +67,9 @@
 #	ALIASES
 #	=======
 
+	# aliases
+	alias aliases='~/scripts/aliases.sh'
+
 	# rm
 	# --
 	#	Prompt before deleting files.
