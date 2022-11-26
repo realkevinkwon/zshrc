@@ -67,8 +67,9 @@
 #	ALIASES
 #	=======
 
-	# aliases
+	# alias commands
 	alias aliases='~/scripts/aliases.sh'
+	alias paths='~/scripts/paths.sh'
 
 	# rm
 	# --
