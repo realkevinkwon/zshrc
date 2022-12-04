@@ -143,7 +143,7 @@
 	# -------
 	# Espressif IDF
 	#
-	alias idf='. $HOME/esp/esp-idf/export.sh'
+	alias esp-idf='. $HOME/esp/esp-idf/export.sh'
 
 #	====
 #	PATH
